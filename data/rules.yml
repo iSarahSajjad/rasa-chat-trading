@@ -1,0 +1,77 @@
+version: "3.1"
+
+rules:
+- rule: Respond to goodbye intent
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Respond to bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Provide stock price information
+  steps:
+  - intent: check_stock_prices
+  - action: utter_action_get_stock_price
+
+- rule: Place order
+  steps:
+  - intent: place_order
+  - action: utter_action_place_order
+
+- rule: Cancel order
+  steps:
+  - intent: cancel_order
+  - action: utter_action_cancel_order
+
+- rule: Get account information
+  steps:
+  - intent: get_account_info
+  - action: utter_account_balance
+
+- rule: Provide market news
+  steps:
+  - intent: market_news
+  - action: utter_market_news
+
+- rule: Perform technical analysis
+  steps:
+  - intent: technical_analysis
+  - action: utter_technical_analysis
+
+- rule: Manage account
+  steps:
+  - intent: account_management
+  - action: utter_action_manage_account
+
+- rule: Offer help and support
+  steps:
+  - intent: help_support
+  - action: utter_help_support
+
+- rule: Execute market order
+  steps:
+  - intent: market_order
+  - action: utter_action_execute_market_order
+
+- rule: Execute limit order
+  steps:
+  - intent: limit_order
+  - action: utter_action_execute_limit_order
+
+- rule: Provide exchange rate information when user asks
+  steps:
+  - intent: check_exchange_rate
+  - action: utter_action_get_exchange_rate
+
+- rule: Provide currency trading strategies when user requests
+  steps:
+  - intent: currency_trading_strategy
+  - action: utter_currency_trading_strategy
+
+- rule: Provide currency news updates when user requests
+  steps:
+  - intent: currency_news
+  - action: utter_currency_news

@@ -1,0 +1,94 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - check_stock_prices
+  - place_order
+  - cancel_order
+  - get_account_info
+  - market_news
+  - technical_analysis
+  - account_management
+  - help_support
+  - market_order
+  - limit_order
+  - currency_trading_strategy
+  - currency_news
+  - check_exchange_rate
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey! Welcome to our trading platform. How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day."
+
+  utter_affirm:
+  - text: "Great to hear!"
+
+  utter_deny:
+  - text: "No problem, let me know if there's anything else I can help with."
+
+  utter_iamabot:
+  - text: "I'm a bot here to assist you with your trading needs."
+
+  utter_cheer_up:
+  - text: "Here's something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_account_balance:
+  - text: "Your current account balance is {balance}."
+
+  utter_market_news:
+  - text: "Here are the latest market updates: ."
+
+  utter_technical_analysis:
+  - text: "The technical analysis for {stock} shows {analysis}."
+
+  utter_help_support:
+  - text: "If you need any assistance, feel free to ask. How can I help you?"
+
+  utter_action_get_stock_price:
+  - text: "The current price of {stock} is {price}."
+
+  utter_action_place_order:
+  - text: "Your order has been placed successfully."
+
+  utter_action_cancel_order:
+  - text: "Your order has been canceled successfully."
+
+  utter_action_manage_account:
+  - text: "You have successfully managed your account."
+
+  utter_action_execute_limit_order:
+  - text: "Your limit order has been executed successfully."
+
+  utter_action_execute_market_order:
+  - text: "Your market order has been executed successfully."
+
+  utter_currency_trading_strategy:
+  - text: "Here are some effective currency trading strategies: 
+            Trend following,
+            Momentum trading,
+            Mean reversion,
+            Breakout trading,
+            Counter-trend trading."
+
+  utter_currency_news:
+  - text: "Here are the latest currency news updates: {currency_news}."
+
+  utter_action_get_exchange_rate:
+  - text: "The exchange rate from {source_currency} to {target_currency} is {exchange_rate}."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,198 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: check_stock_prices
+  examples: |
+    - What's the current price of AAPL?
+    - Can you tell me the price of MSFT?
+    - How much is GOOGL trading at right now?
+    - What's the price of TSLA?
+    - Show me the current price of AMZN.
+
+- intent: place_order
+  examples: |
+    - Buy 10 shares of AAPL.
+    - Sell 20 shares of MSFT.
+    - I want to buy 15 shares of GOOGL.
+    - Place an order for 30 shares of TSLA.
+    - Sell 25 shares of AMZN at $3000.
+
+- intent: cancel_order
+  examples: |
+    - Cancel my order for AAPL.
+    - Remove my buy order for MSFT.
+    - I want to cancel my sell order for GOOGL.
+    - Cancel my order for TSLA shares.
+    - Remove my sell order for AMZN at $3000.
+
+- intent: get_account_info
+  examples: |
+    - What's my account balance?
+    - Show my portfolio.
+    - How much money do I have in my account?
+    - Display my account information.
+
+- intent: market_news
+  examples: |
+    - Get me the latest market news.
+    - What's happening in the market?
+    - Show me some market updates.
+    - Any recent market developments?
+    - Tell me about the latest market trends.
+
+- intent: technical_analysis
+  examples: |
+    - Perform technical analysis for AAPL.
+    - Show support and resistance levels for MSFT.
+    - What are the moving averages for GOOGL?
+    - Display technical analysis for TSLA.
+    - Provide me with some technical indicators for AMZN.
+
+- intent: account_management
+  examples: |
+    - Change my password.
+    - Update my account information.
+    - Add funds to my account.
+    - Modify my account settings.
+    - I need to change my account details.
+
+- intent: help_support
+  examples: |
+    - Get help.
+    - How do I place an order?
+    - Contact support.
+    - I need assistance.
+    - Can you help me with something?
+
+- intent: market_order
+  examples: |
+    - Place a market order for 50 shares of AAPL.
+    - Buy 100 shares of MSFT at market price.
+    - Sell 75 shares of GOOGL using market order.
+    - Execute a market order for 200 shares of TSLA.
+    - I want to place a market buy order for 150 shares of AMZN.
+
+- intent: limit_order
+  examples: |
+    - Place a limit order for 20 shares of AAPL at $150.
+    - Buy 30 shares of MSFT at $200 limit.
+    - Sell 25 shares of GOOGL at $250 limit price.
+    - Execute a limit order for 50 shares of TSLA at $700.
+    - I want to place a limit sell order for 40 shares of AMZN at $3500.
+
+
+- intent: check_exchange_rate
+  examples: |
+    - What's the exchange rate from EUR to USD?
+    - Can you tell me the exchange rate for GBP to EUR?
+    - What is 1 USD in GBP?
+    - Show me the exchange rate for AUD to CAD.
+    - How much is 100 EUR in USD?
+    - What's the rate for JPY to GBP?
+    - Tell me the exchange rate for CAD to EUR.
+    - How many USD is 500 EUR worth?
+
+- intent: currency_trading_strategy
+  examples: |
+    - What are some effective currency trading strategies?
+    - Can you provide me with currency trading tips?
+    - Share some currency trading techniques.
+    - How can I improve my currency trading skills?
+    - Tell me about successful currency trading strategies.
+
+- intent: currency_news
+  examples: |
+    - Get me the latest currency news.
+    - What's happening in the currency market?
+    - Show me some currency updates.
+    - Any recent currency developments?
+    - Tell me about the latest currency trends.

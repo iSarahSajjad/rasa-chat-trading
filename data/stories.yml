@@ -1,0 +1,210 @@
+version: "3.1"
+
+stories:
+- story: greet and check stock prices
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_stock_prices
+  - action: utter_action_get_stock_price
+
+- story: greet and place order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_action_place_order
+
+- story: greet and cancel order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_order
+  - action: utter_action_cancel_order
+
+- story: greet and get account information
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_account_info
+  - action: utter_account_balance
+
+- story: greet and get market news
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: market_news
+  - action: utter_market_news
+
+- story: greet and perform technical analysis
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: technical_analysis
+  - action: utter_technical_analysis
+
+- story: greet and manage account
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: account_management
+  - action: utter_action_manage_account
+
+- story: greet and offer help and support
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_support
+  - action: utter_help_support
+
+- story: greet and execute market order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: market_order
+  - action: utter_action_execute_market_order
+
+- story: greet and execute limit order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: limit_order
+  - action: utter_action_execute_limit_order
+
+- story: greet and request currency trading strategies
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: currency_trading_strategy
+  - action: utter_currency_trading_strategy
+
+- story: greet and request currency news updates
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: currency_news
+  - action: utter_currency_news
+
+- story: greet and deny trading
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_deny
+
+- story: greet and affirm trading
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_affirm
+
+- story: greet and inquire about market trends
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: market_news
+  - action: utter_market_news
+
+- story: greet and ask for technical analysis
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: technical_analysis
+  - action: utter_technical_analysis
+
+- story: greet and ask for account balance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_account_info
+  - action: utter_account_balance
+
+- story: greet and ask for help
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: help_support
+  - action: utter_help_support
+
+- story: greet and inquire about currency exchange rate
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_exchange_rate
+  - action: utter_action_get_exchange_rate
+
+- story: greet and inquire about placing a market order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: market_order
+  - action: utter_action_execute_market_order
+
+- story: greet and inquire about placing a limit order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: limit_order
+  - action: utter_action_execute_limit_order
+
+- story: greet and inquire about canceling an order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: cancel_order
+  - action: utter_action_cancel_order
+
+- story: greet, inquire about market news, and ask for help
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: market_news
+  - action: utter_market_news
+  - intent: help_support
+  - action: utter_help_support
+
+- story: greet, ask for technical analysis, and inquire about account balance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: technical_analysis
+  - action: utter_technical_analysis
+  - intent: get_account_info
+  - action: utter_account_balance
+
+- story: greet, inquire about currency exchange rate, and place a market order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: check_exchange_rate
+  - action: utter_action_get_exchange_rate
+  - intent: market_order
+  - action: utter_action_execute_market_order
+
+- story: greet, inquire about placing a limit order, and inquire about canceling an order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: limit_order
+  - action: utter_action_execute_limit_order
+  - intent: cancel_order
+  - action: utter_action_cancel_order
+
+- story: greet, ask for market trends, and request currency trading strategies
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: market_news
+  - action: utter_market_news
+  - intent: currency_trading_strategy
+  - action: utter_currency_trading_strategy
+
+- story: greet, ask for account balance, and inquire about placing a limit order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: get_account_info
+  - action: utter_account_balance
+  - intent: limit_order
+  - action: utter_action_execute_limit_order
